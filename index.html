@@ -1,0 +1,795 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shivam Patidar - Head of Social Media & Operations</title>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;700;800;900&display=swap" rel="stylesheet">
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                    },
+                    colors: {
+                        lime: {
+                            400: '#ccff00', // Custom accent color
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+
+    <style>
+        body {
+            background-color: #0a0a0a;
+            color: white;
+            font-family: 'Inter', sans-serif;
+        }
+        ::selection {
+            background-color: #ccff00;
+            color: black;
+        }
+        /* Hide scrollbar for tab container */
+        .no-scrollbar::-webkit-scrollbar {
+            display: none;
+        }
+        .no-scrollbar {
+            -ms-overflow-style: none;
+            scrollbar-width: none;
+        }
+    </style>
+</head>
+<body class="overflow-x-hidden">
+
+    <!-- Navigation -->
+    <nav class="fixed top-0 w-full z-50 bg-[#0a0a0a]/90 backdrop-blur-md border-b border-white/10">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-20">
+                <div class="flex items-center gap-3">
+                    <div class="w-10 h-10 bg-[#ccff00] rounded-xl flex items-center justify-center text-black font-black text-2xl rotate-3 shadow-[0_0_15px_rgba(204,255,0,0.3)]">S</div>
+                    <div class="flex flex-col">
+                        <span class="font-bold text-lg tracking-tighter leading-none">SHIVAM PATIDAR</span>
+                        <span class="text-[10px] text-gray-400 font-medium tracking-widest uppercase">Head of Social Media & Ops</span>
+                    </div>
+                </div>
+                
+                <div class="hidden lg:flex items-center space-x-8">
+                    <button onclick="scrollToSection('big-idea')" class="text-sm font-bold text-gray-400 hover:text-[#ccff00] transition-colors uppercase tracking-wider">Big Idea</button>
+                    <button onclick="scrollToSection('philosophy')" class="text-sm font-bold text-gray-400 hover:text-[#ccff00] transition-colors uppercase tracking-wider">Philosophy</button>
+                    <button onclick="scrollToSection('case-studies')" class="text-sm font-bold text-gray-400 hover:text-[#ccff00] transition-colors uppercase tracking-wider">Case Studies</button>
+                    <button onclick="scrollToSection('real-estate')" class="text-sm font-bold text-gray-400 hover:text-[#ccff00] transition-colors uppercase tracking-wider">Real Estate</button>
+                    <button onclick="scrollToSection('operations')" class="text-sm font-bold text-gray-400 hover:text-[#ccff00] transition-colors uppercase tracking-wider">Operations</button>
+                    <button onclick="scrollToSection('contact')" class="text-sm font-bold text-gray-400 hover:text-[#ccff00] transition-colors uppercase tracking-wider">Contact</button>
+                </div>
+
+                <div class="lg:hidden">
+                    <button onclick="toggleMenu()" class="text-white p-2">
+                        <i data-lucide="menu" id="menu-icon"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden lg:hidden bg-[#0a0a0a] border-b border-white/10 h-screen absolute w-full top-20 left-0 z-40">
+            <div class="px-6 pt-8 pb-8 space-y-6">
+                <button onclick="scrollToSection('big-idea')" class="block w-full text-left text-2xl font-black text-gray-300 hover:text-[#ccff00] py-2 uppercase">Big Idea</button>
+                <button onclick="scrollToSection('philosophy')" class="block w-full text-left text-2xl font-black text-gray-300 hover:text-[#ccff00] py-2 uppercase">Philosophy</button>
+                <button onclick="scrollToSection('case-studies')" class="block w-full text-left text-2xl font-black text-gray-300 hover:text-[#ccff00] py-2 uppercase">Case Studies</button>
+                <button onclick="scrollToSection('real-estate')" class="block w-full text-left text-2xl font-black text-gray-300 hover:text-[#ccff00] py-2 uppercase">Real Estate</button>
+                <button onclick="scrollToSection('operations')" class="block w-full text-left text-2xl font-black text-gray-300 hover:text-[#ccff00] py-2 uppercase">Operations</button>
+                <button onclick="scrollToSection('contact')" class="block w-full text-left text-2xl font-black text-gray-300 hover:text-[#ccff00] py-2 uppercase">Contact</button>
+            </div>
+        </div>
+    </nav>
+
+    <main class="pt-28 pb-12 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto space-y-32">
+        
+        <!-- PAGE 1 & 2: Hero & Big Idea -->
+        <section id="big-idea" class="relative min-h-[85vh] flex flex-col justify-center">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+                <div class="lg:col-span-7 space-y-8 z-10">
+                    <div class="inline-block bg-[#ccff00]/10 border border-[#ccff00]/20 rounded-full px-5 py-2 text-sm font-bold text-[#ccff00] tracking-wide mb-2">
+                        MY PROFESSIONAL BIG IDEA
+                    </div>
+                    <h1 class="text-5xl md:text-7xl lg:text-8xl font-black tracking-tighter leading-[0.9]">
+                        HEAD OF <br />
+                        <span class="text-transparent bg-clip-text bg-gradient-to-r from-gray-100 to-gray-600">SOCIAL MEDIA</span> <br />
+                        & OPERATIONS
+                    </h1>
+                    
+                    <div class="bg-[#1a1a1a] p-6 md:p-8 rounded-3xl border border-white/10 backdrop-blur-sm relative overflow-hidden group hover:border-[#ccff00]/30 transition-all">
+                        <div class="absolute top-0 right-0 w-32 h-32 bg-[#ccff00]/5 rounded-full blur-3xl group-hover:bg-[#ccff00]/10 transition-all"></div>
+                        <h3 class="text-2xl md:text-3xl font-bold mb-4 text-white">I am a hybrid leader who architects high-performance creative engines.</h3>
+                        <p class="text-gray-400 text-lg leading-relaxed mb-4">
+                            I don't just lead creatives; I build the operational systems that allow creativity to scale. I don't just chase "viral"; I build strategic funnels that turn mass-market attention into measurable business results.
+                        </p>
+                        <p class="text-gray-400 text-lg leading-relaxed mb-4">
+                            My work has generated over <span class="text-white font-bold">200 million views</span>, but more importantly, it has produced over <span class="text-white font-bold">80,000 qualified sales leads</span> and driven direct, double-digit growth in client revenue.
+                        </p>
+                        <p class="text-gray-400 text-lg leading-relaxed">
+                            I lead with a dual-lens—fusing data-driven operations with ambitious creative strategy—to manage a 14-person cross-functional team, command a 2 Cr+ paid media budget, and serve as the strategic lead for a portfolio of over 100 clients.
+                        </p>
+                    </div>
+
+                    <div class="flex flex-wrap gap-4 pt-4">
+                        <button onclick="scrollToSection('contact')" class="bg-[#ccff00] text-black px-8 py-4 rounded-full font-black text-lg hover:bg-[#b3e600] transition-transform hover:scale-105 flex items-center gap-2 shadow-[0_0_20px_rgba(204,255,0,0.4)]">
+                            LET'S BUILD SOMETHING <i data-lucide="arrow-up-right" class="w-6 h-6"></i>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Sticker Wall / Hero Visual -->
+                <div class="lg:col-span-5 relative h-[500px] lg:h-[700px] flex items-center justify-center">
+                    <div class="absolute inset-0 bg-gradient-to-b from-[#ccff00]/10 to-transparent blur-[80px] rounded-full opacity-40"></div>
+                    
+                    <!-- Floating Stickers -->
+                    <div class="relative w-full h-full">
+                        <!-- Views -->
+                        <div class="absolute top-[5%] right-0 md:right-10 bg-white text-black p-5 rounded-xl shadow-[8px_8px_0px_0px_rgba(30,30,30,1)] -rotate-6 hover:rotate-0 transition-transform duration-300 cursor-default border-2 border-black z-20">
+                            <div class="text-5xl font-black tracking-tighter">200M+</div>
+                            <div class="text-sm font-bold uppercase tracking-widest border-t-2 border-black mt-2 pt-1">Views Generated</div>
+                        </div>
+
+                        <!-- Leads -->
+                        <div class="absolute top-[35%] -left-2 md:-left-8 bg-[#ccff00] text-black p-5 rounded-xl shadow-[8px_8px_0px_0px_rgba(255,255,255,0.2)] rotate-3 hover:rotate-0 transition-transform duration-300 cursor-default border-2 border-black z-30">
+                            <div class="text-5xl font-black tracking-tighter">80,000+</div>
+                            <div class="text-sm font-bold uppercase tracking-widest border-t-2 border-black mt-2 pt-1">Qualified Sales Leads</div>
+                        </div>
+
+                        <!-- Budget -->
+                        <div class="absolute bottom-[20%] right-4 bg-[#E6E6FA] text-black p-5 rounded-xl shadow-[8px_8px_0px_0px_rgba(204,255,0,0.2)] -rotate-3 hover:rotate-0 transition-transform duration-300 cursor-default border-2 border-black z-20">
+                            <div class="text-4xl font-black tracking-tighter">2 Cr+</div>
+                            <div class="text-sm font-bold uppercase tracking-widest border-t-2 border-black mt-2 pt-1">Paid Media Budget</div>
+                        </div>
+                         
+                        <!-- Team -->
+                        <div class="absolute top-[20%] right-[20%] bg-[#ff5e5e] text-white p-4 rounded-full shadow-lg rotate-12 hover:rotate-0 transition-transform z-10 w-32 h-32 flex items-center justify-center text-center border-4 border-black box-border">
+                           <div class="leading-none">
+                             <span class="font-black text-4xl block">14</span>
+                             <span class="font-bold text-xs uppercase">Person Team</span>
+                           </div>
+                        </div>
+
+                         <!-- Clients -->
+                         <div class="absolute bottom-[10%] left-[10%] bg-black text-white p-4 rounded-lg shadow-lg rotate-[-12deg] hover:rotate-0 transition-transform z-10 border-2 border-white/20">
+                           <div class="leading-none text-center">
+                             <span class="font-black text-2xl block">100+</span>
+                             <span class="font-bold text-[10px] uppercase text-gray-400">Clients</span>
+                           </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- PAGE 3: Philosophy -->
+        <section id="philosophy" class="relative">
+            <div class="absolute -top-20 -left-20 w-64 h-64 bg-[#ccff00]/5 rounded-full blur-[100px] pointer-events-none"></div>
+            <div class="text-center mb-16 max-w-3xl mx-auto">
+                <h2 class="text-sm font-bold text-[#ccff00] uppercase tracking-widest mb-4">Core Philosophy</h2>
+                <h3 class="text-4xl md:text-5xl font-black tracking-tight mb-6">THINK BEYOND <br/>GOING VIRAL</h3>
+                <div class="w-24 h-2 bg-[#ccff00] mx-auto rounded-full mb-8"></div>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <div class="bg-[#111] p-10 rounded-[2.5rem] border border-white/5 hover:border-[#ccff00]/30 transition-all duration-300 group">
+                    <div class="w-16 h-16 bg-[#ccff00]/10 rounded-2xl flex items-center justify-center mb-8 group-hover:bg-[#ccff00] transition-colors">
+                        <i data-lucide="zap" class="w-8 h-8 text-[#ccff00] group-hover:text-black transition-colors"></i>
+                    </div>
+                    <p class="text-gray-300 text-xl leading-relaxed font-medium">
+                        Any agency can get lucky with one viral video. My philosophy is to build scalable systems that make success repeatable.
+                    </p>
+                </div>
+
+                <div class="bg-[#111] p-10 rounded-[2.5rem] border border-white/5 hover:border-[#ccff00]/30 transition-all duration-300 group">
+                    <div class="w-16 h-16 bg-[#ccff00]/10 rounded-2xl flex items-center justify-center mb-8 group-hover:bg-[#ccff00] transition-colors">
+                        <i data-lucide="trending-up" class="w-8 h-8 text-[#ccff00] group-hover:text-black transition-colors"></i>
+                    </div>
+                    <p class="text-gray-300 text-xl leading-relaxed font-medium">
+                        I believe creativity is the spark, but process is the engine. I specialize in designing the operational workflows, talent frameworks, and content-to-conversion funnels that allow creative teams to thrive while delivering predictable, high-volume, high-quality results for clients.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- PAGE 4-19: Case Studies -->
+        <section id="case-studies" class="space-y-16">
+            <div class="flex flex-col md:flex-row justify-between items-end gap-6 border-b border-white/10 pb-8">
+                <div>
+                    <h2 class="text-5xl md:text-6xl font-black tracking-tighter mb-4 text-white">CASE STUDIES</h2>
+                    <p class="text-xl text-gray-400 font-light">From Concept to Conversion</p>
+                </div>
+                <!-- Tabs -->
+                <div class="flex gap-2 bg-[#1a1a1a] p-1.5 rounded-full overflow-x-auto max-w-full no-scrollbar">
+                    <button onclick="filterTabs('all')" class="tab-btn active px-6 py-2.5 rounded-full text-sm font-bold uppercase tracking-wider transition-all whitespace-nowrap bg-[#ccff00] text-black shadow-lg" data-tab="all">all</button>
+                    <button onclick="filterTabs('Growth')" class="tab-btn px-6 py-2.5 rounded-full text-sm font-bold uppercase tracking-wider transition-all whitespace-nowrap text-gray-400 hover:text-white hover:bg-white/5" data-tab="Growth">Growth</button>
+                    <button onclick="filterTabs('Launch')" class="tab-btn px-6 py-2.5 rounded-full text-sm font-bold uppercase tracking-wider transition-all whitespace-nowrap text-gray-400 hover:text-white hover:bg-white/5" data-tab="Launch">Launch</button>
+                    <button onclick="filterTabs('ROI')" class="tab-btn px-6 py-2.5 rounded-full text-sm font-bold uppercase tracking-wider transition-all whitespace-nowrap text-gray-400 hover:text-white hover:bg-white/5" data-tab="ROI">ROI</button>
+                </div>
+            </div>
+
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+                
+                <!-- Case Study 1: Associated Alcohols -->
+                <div class="col-span-1 lg:col-span-2 group rounded-[2.5rem] bg-[#151515] border border-white/5 hover:border-[#ccff00]/30 transition-all overflow-hidden cs-item" data-category="Growth">
+                   <div class="grid lg:grid-cols-2 h-full">
+                     <div class="p-10 lg:p-14 flex flex-col justify-between space-y-8">
+                        <div>
+                          <div class="flex items-center gap-3 mb-6">
+                            <span class="bg-orange-500/10 text-orange-400 px-4 py-1.5 rounded-full text-xs font-black uppercase tracking-widest border border-orange-500/20">Case Study 1</span>
+                            <span class="text-gray-500 font-bold text-sm uppercase">Growth Hack</span>
+                          </div>
+                          <h3 class="text-3xl md:text-4xl font-black mb-6 leading-tight">The Dark Market Growth Hack</h3>
+                          
+                          <div class="space-y-6 text-gray-400 text-lg">
+                            <div>
+                              <span class="text-white font-bold block mb-1">Client:</span> Associated Alcohols and Breweries Limited
+                            </div>
+                            <div>
+                              <span class="text-white font-bold block mb-1">Brand:</span> Central Province (Rum, Whiskey, Vodka)
+                            </div>
+                            <div>
+                              <span class="text-white font-bold block mb-1">Role:</span> Social Media Strategist & Campaign Planner
+                            </div>
+                          </div>
+                        </div>
+
+                        <div class="space-y-6">
+                          <div class="bg-black/30 p-6 rounded-2xl border border-white/5">
+                            <h4 class="text-[#ccff00] font-bold uppercase tracking-wider text-sm mb-3">The Challenge</h4>
+                            <p class="text-gray-300 text-sm leading-relaxed">
+                              Scale a spirits brand in a highly regulated dark market environment without using surrogate marketing or violating strict platform policies against direct alcohol promotion.
+                            </p>
+                          </div>
+                          <div class="bg-black/30 p-6 rounded-2xl border border-white/5">
+                            <h4 class="text-[#ccff00] font-bold uppercase tracking-wider text-sm mb-3">The Solution</h4>
+                            <p class="text-gray-300 text-sm leading-relaxed">
+                              I developed and executed the Product-as-a-Prop Strategy. Instead of making the alcohol the subject of the content (which risks flags and bans), I integrated the bottle as a natural, essential prop within lifestyle, humor, and relatable situational content. This neutralized the regulatory challenge while keeping the brand top-of-mind. I built a content machine that didn't just "show" the product but "placed" it in the center of conversations the audience was already having.
+                            </p>
+                          </div>
+                        </div>
+                     </div>
+
+                     <div class="bg-[#1a1a1a] p-10 lg:p-14 border-t lg:border-t-0 lg:border-l border-white/5 flex flex-col justify-center">
+                        <h4 class="text-2xl font-black mb-8 flex items-center gap-2">THE RESULTS <i data-lucide="trending-up" class="text-[#ccff00]"></i></h4>
+                        <div class="grid gap-6">
+                          <div class="bg-[#ccff00] text-black p-6 rounded-2xl shadow-lg transform group-hover:-translate-y-1 transition-transform">
+                            <div class="text-4xl font-black mb-1">39,000+</div>
+                            <div class="font-bold text-sm uppercase tracking-wide opacity-80">Organic Followers</div>
+                            <p class="text-xs mt-2 font-medium border-t border-black/10 pt-2">Grew the account to 39,000+ followers (all organic) in just 19 months.</p>
+                          </div>
+
+                          <div class="grid grid-cols-2 gap-4">
+                            <div class="bg-white/5 p-5 rounded-2xl border border-white/10">
+                              <div class="text-2xl font-black text-white mb-1">2,000+</div>
+                              <div class="text-xs text-gray-400 uppercase font-bold">Consistent Growth</div>
+                              <p class="text-[10px] text-gray-500 mt-2">New followers every month.</p>
+                            </div>
+                            <div class="bg-white/5 p-5 rounded-2xl border border-white/10">
+                              <div class="text-2xl font-black text-white mb-1">54M+</div>
+                              <div class="text-xs text-gray-400 uppercase font-bold">Views</div>
+                              <p class="text-[10px] text-gray-500 mt-2">Generated massive organic visibility.</p>
+                            </div>
+                            <div class="bg-white/5 p-5 rounded-2xl border border-white/10">
+                              <div class="text-2xl font-black text-white mb-1">260k+</div>
+                              <div class="text-xs text-gray-400 uppercase font-bold">Profile Visits</div>
+                              <p class="text-[10px] text-gray-500 mt-2">Proving high intent.</p>
+                            </div>
+                            <div class="bg-white/5 p-5 rounded-2xl border border-white/10">
+                              <div class="text-2xl font-black text-white mb-1">31M+</div>
+                              <div class="text-xs text-gray-400 uppercase font-bold">Reach</div>
+                              <p class="text-[10px] text-gray-500 mt-2">Unique people reached.</p>
+                            </div>
+                          </div>
+                        </div>
+                     </div>
+                   </div>
+                </div>
+
+                <!-- Case Study 2: The Brand Revolution -->
+                <div class="col-span-1 bg-[#151515] rounded-[2.5rem] border border-white/5 p-10 flex flex-col group hover:border-purple-500/30 transition-all cs-item" data-category="Growth">
+                   <div class="mb-8">
+                      <div class="flex justify-between items-start mb-4">
+                        <span class="bg-purple-500/10 text-purple-400 px-4 py-1.5 rounded-full text-xs font-black uppercase tracking-widest border border-purple-500/20">Case Study 2</span>
+                      </div>
+                      <h3 class="text-3xl font-black mb-4">The Brand Revolution</h3>
+                      <p class="text-gray-400 font-bold mb-1">Project: The MasterStroke - A Micro Drama series</p>
+                      <p class="text-gray-500 text-sm mb-6">Client: Associated alcohols & breweries ltd</p>
+                      
+                      <div class="space-y-4 mb-8">
+                         <div>
+                           <h4 class="text-purple-400 text-xs font-bold uppercase mb-2">The Challenge</h4>
+                           <p class="text-gray-400 text-sm">How do we connect with a young audience, break the clutter, and do something never done before in this category?</p>
+                         </div>
+                         <div>
+                           <h4 class="text-purple-400 text-xs font-bold uppercase mb-2">My Solution</h4>
+                           <p class="text-gray-400 text-sm">I moved beyond traditional ads to create an owned media property that built a dedicated audience. I wrote The MasterStroke, Central India's first cinematic micro-drama series launched on social media in the alcohol industry.</p>
+                         </div>
+                         <div>
+                           <h4 class="text-purple-400 text-xs font-bold uppercase mb-2">My Role</h4>
+                           <p class="text-gray-400 text-sm">End-to-End Creative Lead (Story Writer, Screenplay, Scriptwriter).</p>
+                         </div>
+                      </div>
+                   </div>
+
+                   <div class="mt-auto bg-[#1a1a1a] rounded-3xl p-6 border border-white/5">
+                      <h4 class="text-xl font-bold mb-4 text-white">The Result:</h4>
+                      <ul class="space-y-4">
+                        <li class="flex justify-between items-center border-b border-white/5 pb-2">
+                           <span class="text-gray-400 text-sm w-1/2">Views (1.5 Cr Reach)</span>
+                           <span class="text-white font-black text-right w-1/2">2.4 Crore+</span>
+                        </li>
+                        <li class="flex justify-between items-center border-b border-white/5 pb-2">
+                           <span class="text-gray-400 text-sm">Interactions</span>
+                           <span class="text-white font-black">72.4k</span>
+                        </li>
+                        <li class="flex justify-between items-center border-b border-white/5 pb-2">
+                           <span class="text-gray-400 text-sm">Profile Visits</span>
+                           <span class="text-white font-black">62.9k</span>
+                        </li>
+                        <li class="flex justify-between items-center pb-2">
+                           <span class="text-gray-400 text-sm">New Followers</span>
+                           <span class="text-white font-black">9.7k</span>
+                        </li>
+                      </ul>
+                      <div class="mt-4 p-3 bg-purple-500/10 rounded-xl border border-purple-500/20">
+                        <p class="text-[10px] text-purple-300 font-medium leading-relaxed">
+                          <span class="font-bold uppercase block mb-1">Business Impact:</span>
+                          Ignited mass-scale brand conversation and established the brand as a market innovator, proving the success of my owned-media strategy.
+                        </p>
+                      </div>
+                   </div>
+                </div>
+
+                <!-- Case Study 3: Club Launch -->
+                <div class="col-span-1 bg-[#151515] rounded-[2.5rem] border border-white/5 p-10 flex flex-col group hover:border-pink-500/30 transition-all cs-item" data-category="Launch">
+                  <div class="mb-8">
+                      <div class="flex justify-between items-start mb-4">
+                        <span class="bg-pink-500/10 text-pink-400 px-4 py-1.5 rounded-full text-xs font-black uppercase tracking-widest border border-pink-500/20">Case Study 3</span>
+                      </div>
+                      <h3 class="text-3xl font-black mb-4">Club Launch</h3>
+                      <p class="text-gray-400 font-bold mb-6">Project: Barrel & Co.</p>
+                      
+                      <div class="space-y-4 mb-8">
+                         <div>
+                           <h4 class="text-pink-400 text-xs font-bold uppercase mb-2">The Challenge</h4>
+                           <p class="text-gray-400 text-sm">Launch one of Mumbai's most renowned clubs in a new city (Indore) and guarantee a sold-out opening.</p>
+                         </div>
+                         <div>
+                           <h4 class="text-pink-400 text-xs font-bold uppercase mb-2">My Solution</h4>
+                           <p class="text-gray-400 text-sm">I architected a 360° digital launch strategy, combining high-energy viral content, targeted influencer marketing, and a relentless hype-building campaign.</p>
+                         </div>
+                         <div>
+                           <h4 class="text-pink-400 text-xs font-bold uppercase mb-2">My Role</h4>
+                           <p class="text-gray-400 text-sm">Content Strategist & Campaign Planner.</p>
+                         </div>
+                      </div>
+                  </div>
+
+                  <div class="mt-auto">
+                     <div class="relative bg-gradient-to-br from-pink-600 to-purple-800 p-8 rounded-3xl text-center transform group-hover:scale-105 transition-transform duration-300 shadow-2xl">
+                        <div class="absolute top-0 left-0 w-full h-full bg-[url('https://www.transparenttextures.com/patterns/cubes.png')] opacity-20"></div>
+                        <div class="relative z-10">
+                          <h4 class="text-white font-black text-3xl mb-2 italic">THE BUSINESS WIN</h4>
+                          <p class="text-white/90 text-sm font-medium mb-6 leading-relaxed">The hype was so successful, the club sold out tables every single day.</p>
+                          
+                          <div class="flex justify-between items-end border-t border-white/20 pt-4">
+                            <div class="text-left">
+                              <div class="text-2xl font-black text-white">9 Million+</div>
+                              <div class="text-[10px] uppercase font-bold text-white/80">Views in 3 months</div>
+                            </div>
+                            <div class="text-right">
+                              <div class="text-2xl font-black text-white">0 to 6,000+</div>
+                              <div class="text-[10px] uppercase font-bold text-white/80">Followers in 60 days</div>
+                            </div>
+                          </div>
+                          <div class="mt-4 text-xs text-white/70 bg-black/20 p-2 rounded-lg">
+                            A single viral reel amassed 2.3 Million+ organic views
+                          </div>
+                        </div>
+                     </div>
+                  </div>
+                </div>
+
+                <!-- Case Study 4: Simcha Island -->
+                <div class="col-span-1 lg:col-span-2 bg-[#151515] rounded-[2.5rem] border border-white/5 p-10 md:p-14 group hover:border-blue-500/30 transition-all cs-item" data-category="ROI">
+                  <div class="grid md:grid-cols-2 gap-12 items-center">
+                    <div class="space-y-6">
+                       <div class="flex items-center gap-3">
+                         <span class="bg-blue-500/10 text-blue-400 px-4 py-1.5 rounded-full text-xs font-black uppercase tracking-widest border border-blue-500/20">Case Study 4</span>
+                         <span class="text-gray-500 font-bold text-sm uppercase">Snow Park Launch</span>
+                       </div>
+                       <h3 class="text-3xl md:text-4xl font-black text-white">Simcha Island</h3>
+                       <p class="text-gray-500 text-sm font-medium">Client: Simcha Island - Central India's biggest adventure park and Resort.</p>
+
+                       <div class="space-y-4">
+                          <div class="bg-black/30 p-5 rounded-xl border border-white/5">
+                            <h4 class="text-blue-400 font-bold text-xs uppercase mb-2">The Challenge</h4>
+                            <p class="text-gray-400 text-sm">Prove the direct ROI of digital creative by launching a new attraction and, most importantly, driving ticket sales.</p>
+                          </div>
+                          <div class="bg-black/30 p-5 rounded-xl border border-white/5">
+                            <h4 class="text-blue-400 font-bold text-xs uppercase mb-2">My Solution</h4>
+                            <p class="text-gray-400 text-sm">I developed a 3-part video campaign (teasers + main promo) that focused on experience-led storytelling to drive urgency and desire.</p>
+                          </div>
+                          <div class="bg-black/30 p-5 rounded-xl border border-white/5">
+                            <h4 class="text-blue-400 font-bold text-xs uppercase mb-2">My Role</h4>
+                            <p class="text-gray-400 text-sm">Scriptwriter, Director, and long-term (3.5+ year) strategic lead for the brand.</p>
+                          </div>
+                       </div>
+                    </div>
+
+                    <div class="bg-[#1a1a1a] rounded-3xl p-10 flex flex-col items-center justify-center text-center border border-white/5 relative overflow-hidden">
+                       <div class="absolute inset-0 bg-blue-500/5"></div>
+                       <div class="relative z-10 w-full">
+                          <h4 class="text-white font-bold uppercase tracking-widest mb-8">The Result</h4>
+                          
+                          <div class="relative w-64 h-64 mx-auto mb-8">
+                            <svg class="w-full h-full transform -rotate-90">
+                              <circle cx="128" cy="128" r="110" stroke="#333" stroke-width="16" fill="none" />
+                              <circle cx="128" cy="128" r="110" stroke="#3b82f6" stroke-width="16" fill="none" stroke-dasharray="690" stroke-dashoffset="490" stroke-linecap="round" />
+                            </svg>
+                            <div class="absolute inset-0 flex flex-col items-center justify-center">
+                              <span class="text-6xl font-black text-white">29%</span>
+                              <span class="text-sm uppercase font-bold text-gray-400 mt-2">Sales Increase</span>
+                            </div>
+                          </div>
+
+                          <p class="text-gray-300 text-sm leading-relaxed mb-6">
+                            Direct increase in Snow Park sales within two weeks of launch. This is the metric that proves the model.
+                          </p>
+                          
+                          <div class="inline-block bg-white/10 px-6 py-2 rounded-full">
+                            <span class="text-white font-bold">1.2M+</span> <span class="text-gray-400 text-sm">Views across platforms</span>
+                          </div>
+                       </div>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Case Study 5: Winter Fiesta -->
+                <div class="col-span-1 bg-[#151515] rounded-[2.5rem] border border-white/5 p-10 flex flex-col group hover:border-green-500/30 transition-all cs-item" data-category="Launch">
+                   <div class="mb-8">
+                      <div class="flex justify-between items-start mb-4">
+                        <span class="bg-green-500/10 text-green-400 px-4 py-1.5 rounded-full text-xs font-black uppercase tracking-widest border border-green-500/20">Case Study 5</span>
+                      </div>
+                      <h3 class="text-3xl font-black mb-4">Winter Fiesta Promotion</h3>
+                      <p class="text-gray-400 font-bold mb-1">Project: Simcha Island Winter Fiesta (360° Holiday Campaign)</p>
+                      <p class="text-gray-500 text-sm mb-6">Client: Simcha Island - Central India's Biggest Adventure Park & Resort</p>
+
+                      <div class="space-y-4 mb-8">
+                        <div>
+                          <h4 class="text-green-400 text-xs font-bold uppercase mb-2">The Challenge</h4>
+                          <p class="text-gray-400 text-sm">Among all the events happening at the same time, how can we dominate the entire month-long holiday season (Christmas to New Year's)? The goal: it wasn't just online engagement; it was to drive quantifiable, in-person footfall against all other holiday competition.</p>
+                        </div>
+                        <div>
+                          <h4 class="text-green-400 text-xs font-bold uppercase mb-2">My Role</h4>
+                          <p class="text-gray-400 text-sm">Lead Campaign & Social Media</p>
+                        </div>
+                        <div>
+                          <h4 class="text-green-400 text-xs font-bold uppercase mb-2">My Solution</h4>
+                          <p class="text-gray-400 text-sm">I designed and executed, in collaboration with the branding team, a complete 360° integrated campaign, Happy Ho! It's a Simcha Winter.</p>
+                        </div>
+                      </div>
+
+                      <div class="bg-[#1a1a1a] p-4 rounded-xl border border-white/5 mb-6">
+                        <h4 class="text-white text-xs font-bold uppercase mb-3">The unified strategy:</h4>
+                        <div class="space-y-2">
+                           <div class="flex items-start gap-2">
+                             <div class="w-1.5 h-1.5 rounded-full bg-green-500 mt-1.5"></div>
+                             <p class="text-xs text-gray-400"><span class="text-white font-bold">Digital & Paid:</span> Social media, influencer marketing, Google Search ads, and YouTube ads.</p>
+                           </div>
+                           <div class="flex items-start gap-2">
+                             <div class="w-1.5 h-1.5 rounded-full bg-green-500 mt-1.5"></div>
+                             <p class="text-xs text-gray-400"><span class="text-white font-bold">Offline & OOH:</span> Radio spots, auto-rickshaw branding, and complete on-site creative/collateral.</p>
+                           </div>
+                           <div class="flex items-start gap-2">
+                             <div class="w-1.5 h-1.5 rounded-full bg-green-500 mt-1.5"></div>
+                             <p class="text-xs text-gray-400"><span class="text-white font-bold">Operations:</span> Coordinated all creative, media, and on-ground teams to ensure a single, consistent message across dozens of touchpoints.</p>
+                           </div>
+                        </div>
+                      </div>
+                   </div>
+
+                   <div class="mt-auto bg-green-900/10 p-6 rounded-3xl border border-green-500/10">
+                      <h4 class="text-green-400 font-bold uppercase mb-4 text-sm">The Result & Business Win</h4>
+                      <div class="grid grid-cols-2 gap-4">
+                        <div class="bg-black/40 p-3 rounded-xl">
+                          <div class="text-xl font-black text-white">14,000</div>
+                          <div class="text-[10px] text-gray-400 uppercase">In-Person Visitors</div>
+                        </div>
+                        <div class="bg-black/40 p-3 rounded-xl">
+                          <div class="text-xl font-black text-white">2.9M</div>
+                          <div class="text-[10px] text-gray-400 uppercase">Impressions (Meta)</div>
+                        </div>
+                        <div class="bg-black/40 p-3 rounded-xl">
+                          <div class="text-xl font-black text-white">92,000</div>
+                          <div class="text-[10px] text-gray-400 uppercase">YouTube Views</div>
+                        </div>
+                        <div class="bg-black/40 p-3 rounded-xl">
+                          <div class="text-xl font-black text-white">5,900</div>
+                          <div class="text-[10px] text-gray-400 uppercase">Website Visits</div>
+                        </div>
+                      </div>
+                   </div>
+                </div>
+
+                <!-- Case Study 6: Real Estate -->
+                <div class="col-span-1 bg-[#151515] rounded-[2.5rem] border border-white/5 p-10 flex flex-col group hover:border-indigo-500/30 transition-all cs-item" data-category="ROI">
+                   <div class="mb-8">
+                      <div class="flex justify-between items-start mb-4">
+                        <span class="bg-indigo-500/10 text-indigo-400 px-4 py-1.5 rounded-full text-xs font-black uppercase tracking-widest border border-indigo-500/20">Case Study 6</span>
+                      </div>
+                      <h3 class="text-3xl font-black mb-4">The Real Estate Repositioning Play</h3>
+                      <p class="text-gray-400 font-bold mb-1">Project: Royal Greens by Man Developers</p>
+                      <p class="text-gray-500 text-sm mb-6">Client: Indoprops</p>
+
+                      <div class="space-y-4 mb-8">
+                        <div>
+                          <h4 class="text-indigo-400 text-xs font-bold uppercase mb-2">The Challenge</h4>
+                          <p class="text-gray-400 text-sm">Lead generation was failing. The market perceived the project's location (Dewas Naka) as too far from Indore's main hub (Vijaynagar), creating a significant barrier to purchase. The core problem wasn't the product; it was the perception.</p>
+                        </div>
+                        <div>
+                          <h4 class="text-indigo-400 text-xs font-bold uppercase mb-2">My Role</h4>
+                          <p class="text-gray-400 text-sm">Lead Strategist & Campaign Architect</p>
+                        </div>
+                      </div>
+
+                      <div class="bg-[#1a1a1a] p-5 rounded-2xl border border-white/5 mb-6">
+                         <h4 class="text-indigo-400 font-bold text-xs uppercase mb-3">My Solution</h4>
+                         <p class="text-gray-400 text-sm mb-2">I pivoted the entire strategy. Instead of trying to sell the township (the product), I developed a campaign to sell the area (the solution).</p>
+                         <ul class="list-disc list-inside text-xs text-gray-400 space-y-1 pl-1">
+                           <li><span class="text-white font-bold">Reframe the Narrative:</span> Promoting the area first as the new extension of Vijaynagar.</li>
+                           <li><span class="text-white font-bold">Sell the Why:</span> Sold the concept—peace of mind, community living, and an escape from the city's congestion.</li>
+                           <li><span class="text-white font-bold">Introduce the How:</span> Only after establishing the area's value did we introduce Royal Greens.</li>
+                         </ul>
+                      </div>
+                   </div>
+
+                   <div class="mt-auto bg-indigo-900/10 p-6 rounded-3xl border border-indigo-500/10 flex items-center justify-between">
+                      <div class="max-w-[60%]">
+                        <h4 class="text-indigo-400 font-bold uppercase text-sm mb-1">The Result</h4>
+                        <p class="text-[10px] text-gray-300 leading-snug">The narrative shift was a success. By identifying and solving the core location objection before the sales pitch, we broke the lead-gen stalemate.</p>
+                      </div>
+                      <div class="text-right">
+                        <div class="text-3xl font-black text-white">4,000+</div>
+                        <div class="text-[10px] uppercase font-bold text-indigo-300">Qualified Leads</div>
+                      </div>
+                   </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- PAGE 20-21: The Real Estate Engine -->
+        <section id="real-estate" class="bg-[#151515] rounded-[3rem] p-8 md:p-16 border border-white/5 relative overflow-hidden">
+           <div class="absolute top-0 left-0 w-full h-2 bg-gradient-to-r from-[#ccff00] to-transparent"></div>
+           
+           <div class="grid grid-cols-1 lg:grid-cols-12 gap-12">
+             <div class="lg:col-span-5">
+               <h2 class="text-4xl md:text-5xl font-black mb-6 uppercase tracking-tight">The Real Estate Engine</h2>
+               <p class="text-xl text-gray-400 font-medium mb-8">A great agency can get results in any vertical. I built a machine for one of the toughest: Real Estate.</p>
+               
+               <div class="space-y-8">
+                 <div class="pl-6 border-l-2 border-[#ccff00]">
+                   <h4 class="text-[#ccff00] font-bold uppercase tracking-wider text-sm mb-2">The Problem I Solve</h4>
+                   <p class="text-gray-300">The single biggest complaint from any real estate client is irrelevant leads. My strategy was built to solve this.</p>
+                 </div>
+                 <div class="pl-6 border-l-2 border-[#ccff00]">
+                   <h4 class="text-[#ccff00] font-bold uppercase tracking-wider text-sm mb-2">My Solution</h4>
+                   <p class="text-gray-300">I designed and implemented a high-performance, full-funnel content-to-conversion engine that filters and nurtures leads at scale.</p>
+                 </div>
+               </div>
+             </div>
+
+             <div class="lg:col-span-7 bg-[#1a1a1a] p-8 md:p-10 rounded-[2rem] border border-white/5 flex flex-col justify-between">
+                <div>
+                  <h4 class="text-white font-bold uppercase mb-6">This integrated system includes:</h4>
+                  <div class="grid md:grid-cols-2 gap-4 mb-8">
+                    <!-- Items inserted via manual HTML to ensure content accuracy -->
+                    <div class="flex items-start gap-3 bg-black/40 p-4 rounded-xl">
+                        <i data-lucide="check-circle-2" class="w-5 h-5 text-[#ccff00] flex-shrink-0 mt-0.5"></i>
+                        <span class="text-gray-300 text-sm font-medium">Strategic Content Creation (Video, SEO-driven blogs, virtual tours)</span>
+                    </div>
+                    <div class="flex items-start gap-3 bg-black/40 p-4 rounded-xl">
+                        <i data-lucide="check-circle-2" class="w-5 h-5 text-[#ccff00] flex-shrink-0 mt-0.5"></i>
+                        <span class="text-gray-300 text-sm font-medium">Targeted Paid Media (Social Media, and Search,)</span>
+                    </div>
+                    <div class="flex items-start gap-3 bg-black/40 p-4 rounded-xl">
+                        <i data-lucide="check-circle-2" class="w-5 h-5 text-[#ccff00] flex-shrink-0 mt-0.5"></i>
+                        <span class="text-gray-300 text-sm font-medium">High-Conversion WhatsApp Funnels</span>
+                    </div>
+                    <div class="flex items-start gap-3 bg-black/40 p-4 rounded-xl">
+                        <i data-lucide="check-circle-2" class="w-5 h-5 text-[#ccff00] flex-shrink-0 mt-0.5"></i>
+                        <span class="text-gray-300 text-sm font-medium">Automated Lead Nurturing & Filtration</span>
+                    </div>
+                    <div class="flex items-start gap-3 bg-black/40 p-4 rounded-xl">
+                        <i data-lucide="check-circle-2" class="w-5 h-5 text-[#ccff00] flex-shrink-0 mt-0.5"></i>
+                        <span class="text-gray-300 text-sm font-medium">Seamless CRM Management & Integration</span>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="bg-[#ccff00] text-black p-8 rounded-2xl">
+                  <h4 class="font-black text-3xl md:text-4xl mb-2">80,000+ Qualified, Sales-Ready Leads</h4>
+                  <p class="font-medium opacity-80 mb-6 text-sm">generated for my real estate clients including SAA, BCM Group, Skye Earth Developers, NM Group, SS Infinitus, Ruchi Realty, D2R, Sanjana Developers, Universal Infratech, VKG Group, etc.</p>
+                  <p class="font-bold border-t border-black/20 pt-4">I turned the marketing department from a cost center into the primary revenue driver for these brands.</p>
+                </div>
+             </div>
+           </div>
+        </section>
+
+        <!-- PAGE 22-24: Operations -->
+        <section id="operations" class="relative">
+           <div class="text-center mb-16">
+             <h2 class="text-5xl md:text-6xl font-black uppercase tracking-tighter">The How:<br/>Leading Creative Operations</h2>
+           </div>
+
+           <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 items-stretch">
+             <div class="bg-[#151515] p-10 md:p-14 rounded-[3rem] border border-white/5 flex flex-col justify-center">
+               <p class="text-2xl md:text-3xl text-gray-300 font-light leading-relaxed mb-10">
+                 My title is <span class="text-white font-bold">Head of Social Media and Operations</span> for a reason. The strategy is the <span class="text-[#ccff00] font-bold">what</span>; the operations is the <span class="text-[#ccff00] font-bold">how</span>.
+               </p>
+               <p class="text-gray-400 text-lg">
+                 As the leader of a 14-person unit at i-engage, I built the machine that services over 100+ clients.
+               </p>
+             </div>
+
+             <div class="grid gap-6">
+                <div class="bg-[#1a1a1a] p-8 rounded-[2rem] border border-white/5 hover:border-[#ccff00]/30 transition-all flex items-start gap-6">
+                   <div class="bg-white/10 p-4 rounded-2xl text-white"><i data-lucide="users" class="w-8 h-8"></i></div>
+                   <div>
+                     <h4 class="text-xl font-bold text-white mb-2">Team Architect</h4>
+                     <p class="text-gray-400 text-sm leading-relaxed">I built the social media division from the ground up, designing the talent framework, recruiting, training, and mentoring specialists and managers into a high-performance unit.</p>
+                   </div>
+                </div>
+                <div class="bg-[#1a1a1a] p-8 rounded-[2rem] border border-white/5 hover:border-[#ccff00]/30 transition-all flex items-start gap-6">
+                   <div class="bg-white/10 p-4 rounded-2xl text-white"><i data-lucide="target" class="w-8 h-8"></i></div>
+                   <div>
+                     <h4 class="text-xl font-bold text-white mb-2">Process Designer</h4>
+                     <p class="text-gray-400 text-sm leading-relaxed">I architected and implemented the core operational workflows for the entire creative division, standardizing briefs, optimizing workload estimation, and ensuring cross-departmental efficiency.</p>
+                   </div>
+                </div>
+                <div class="bg-[#1a1a1a] p-8 rounded-[2rem] border border-white/5 hover:border-[#ccff00]/30 transition-all flex items-start gap-6">
+                   <div class="bg-white/10 p-4 rounded-2xl text-white"><i data-lucide="maximize-2" class="w-8 h-8"></i></div>
+                   <div>
+                     <h4 class="text-xl font-bold text-white mb-2">Senior Strategic Lead</h4>
+                     <p class="text-gray-400 text-sm leading-relaxed">I served as the primary C-suite and senior-level contact for all key accounts, leading strategy, managing vendor negotiations, and ensuring high-value, long-term partnerships.</p>
+                   </div>
+                </div>
+                <div class="bg-[#1a1a1a] p-8 rounded-[2rem] border border-white/5 hover:border-[#ccff00]/30 transition-all flex items-start gap-6">
+                   <div class="bg-white/10 p-4 rounded-2xl text-white"><i data-lucide="bar-chart-3" class="w-8 h-8"></i></div>
+                   <div>
+                     <h4 class="text-xl font-bold text-white mb-2">Portfolio Manager</h4>
+                     <p class="text-gray-400 text-sm leading-relaxed">I commanded and strategically allocated a 2 Cr+ paid media budget, optimizing for high-volume, high-quality leads and conversions.</p>
+                   </div>
+                </div>
+             </div>
+           </div>
+        </section>
+
+        <!-- PAGE 25-26: Why Me & Contact -->
+        <section id="contact" class="py-20 grid grid-cols-1 lg:grid-cols-12 gap-12 bg-[#ccff00] text-black rounded-[3rem] p-8 md:p-16 relative overflow-hidden">
+           <div class="absolute top-0 right-0 w-[500px] h-[500px] bg-white opacity-20 rounded-full blur-[100px] pointer-events-none translate-x-1/2 -translate-y-1/2"></div>
+           
+           <div class="lg:col-span-7 relative z-10">
+             <h2 class="text-4xl font-black mb-8 uppercase">Why Me?</h2>
+             <p class="text-xl font-medium mb-8 leading-relaxed max-w-2xl">
+               You're not just hiring a creative director or an operations manager. You're hiring the rare hybrid leader who bridges the gap between both.
+             </p>
+             <p class="text-lg font-bold mb-6">You should hire me if you need someone who can:</p>
+             
+             <div class="grid gap-4 mb-12">
+               <div class="bg-black/10 p-4 rounded-xl border border-black/5">
+                 <p class="font-medium leading-relaxed">Inspire a creative team to produce a 26M-view viral series... and build the operational process to manage the 99 other clients.</p>
+               </div>
+               <div class="bg-black/10 p-4 rounded-xl border border-black/5">
+                 <p class="font-medium leading-relaxed">Talk brand storytelling and cinematic vision with a director... and talk CRM integration and lead-gen funnels with a martech excecutive.</p>
+               </div>
+               <div class="bg-black/10 p-4 rounded-xl border border-black/5">
+                 <p class="font-medium leading-relaxed">Command a 2 Cr+ media budget... and write the script that makes the creative worth the spend.</p>
+               </div>
+             </div>
+           </div>
+
+           <div class="lg:col-span-5 relative z-10 bg-black text-white p-10 rounded-[2.5rem] flex flex-col justify-between">
+              <div>
+                <p class="text-2xl font-bold leading-tight mb-8 text-[#ccff00]">
+                  I am the leader who builds the strategy, architects the system, and delivers the results.
+                </p>
+                <h3 class="text-white font-bold text-lg mb-2 uppercase tracking-widest">Get in Touch</h3>
+                <p class="text-gray-400 text-sm mb-8">Let's build something remarkable.</p>
+              </div>
+
+              <div class="space-y-4">
+                <a href="tel:+919009659953" class="flex items-center gap-4 bg-white/10 hover:bg-white/20 p-4 rounded-2xl transition-colors group">
+                  <div class="bg-[#ccff00] p-3 rounded-full text-black"><i data-lucide="phone" class="w-5 h-5"></i></div>
+                  <span class="font-bold text-lg group-hover:text-[#ccff00] transition-colors">+91 90096 59953</span>
+                </a>
+                <a href="mailto:contact@shivam.com" class="flex items-center gap-4 bg-white/10 hover:bg-white/20 p-4 rounded-2xl transition-colors group">
+                  <div class="bg-[#ccff00] p-3 rounded-full text-black"><i data-lucide="mail" class="w-5 h-5"></i></div>
+                  <span class="font-bold text-lg group-hover:text-[#ccff00] transition-colors">shivampatidar38100@gmail.com</span>
+                </a>
+              </div>
+           </div>
+        </section>
+
+    </main>
+
+    <footer class="border-t border-white/10 py-12 text-center">
+        <div class="w-12 h-12 bg-[#ccff00] rounded-lg flex items-center justify-center text-black font-black text-xl rotate-3 mx-auto mb-6">S</div>
+        <p class="text-gray-500 text-sm font-medium">© 2024 Shivam Patidar. Head of Social Media & Operations.</p>
+    </footer>
+
+    <!-- JavaScript for Interactivity -->
+    <script>
+        // Initialize Lucide Icons
+        lucide.createIcons();
+
+        // Mobile Menu Toggle
+        function toggleMenu() {
+            const menu = document.getElementById('mobile-menu');
+            const icon = document.getElementById('menu-icon');
+            
+            if (menu.classList.contains('hidden')) {
+                menu.classList.remove('hidden');
+                icon.setAttribute('data-lucide', 'x');
+            } else {
+                menu.classList.add('hidden');
+                icon.setAttribute('data-lucide', 'menu');
+            }
+            lucide.createIcons();
+        }
+
+        // Smooth Scroll
+        function scrollToSection(id) {
+            const element = document.getElementById(id);
+            if (element) {
+                element.scrollIntoView({ behavior: 'smooth' });
+                // Close menu if open
+                document.getElementById('mobile-menu').classList.add('hidden');
+                document.getElementById('menu-icon').setAttribute('data-lucide', 'menu');
+                lucide.createIcons();
+            }
+        }
+
+        // Tab Filtering Logic
+        function filterTabs(category) {
+            // Update buttons
+            const buttons = document.querySelectorAll('.tab-btn');
+            buttons.forEach(btn => {
+                if (btn.dataset.tab === category) {
+                    btn.classList.add('bg-[#ccff00]', 'text-black', 'shadow-lg');
+                    btn.classList.remove('text-gray-400', 'hover:text-white', 'hover:bg-white/5');
+                } else {
+                    btn.classList.remove('bg-[#ccff00]', 'text-black', 'shadow-lg');
+                    btn.classList.add('text-gray-400', 'hover:text-white', 'hover:bg-white/5');
+                }
+            });
+
+            // Update Content
+            const items = document.querySelectorAll('.cs-item');
+            items.forEach(item => {
+                if (category === 'all' || item.dataset.category === category) {
+                    item.classList.remove('hidden');
+                } else {
+                    item.classList.add('hidden');
+                }
+            });
+        }
+    </script>
+</body>
+</html>
